@@ -25,5 +25,7 @@ namespace ComputerShop.Domain.Entites
         public virtual List<Order> Orders { get; set; }
 
         public virtual ShippingInfo ShippingInfo { get; set; }
+
+        public virtual List<Cart> Carts { get; set; }
     }
 }

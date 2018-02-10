@@ -23,7 +23,8 @@ namespace ComputerShop.Domain.Entites
         public virtual Category Category { get; set; }
         #endregion
 
-        public virtual List<ProductRating> Ratings { get; set; }
-        public virtual List<OrderDetail> Details { get; set; }
+        public virtual List<ProductRating> ProductRatings { get; set; }
+        public virtual List<OrderDetail> OrderDetails { get; set; }
+        public virtual List<CartDetail> CartDetails { get; set; }
     }
 }
