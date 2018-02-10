@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShop.MVC", "Compute
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShop.Tests", "ComputerShop.Tests\ComputerShop.Tests.csproj", "{21A76EB8-F2FA-418F-8451-48A30F527C8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShop.Domain", "ComputerShop.Domain\ComputerShop.Domain.csproj", "{AE7E8652-F72C-4D1D-A5E8-7E76BBF27437}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{21A76EB8-F2FA-418F-8451-48A30F527C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A76EB8-F2FA-418F-8451-48A30F527C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A76EB8-F2FA-418F-8451-48A30F527C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7E8652-F72C-4D1D-A5E8-7E76BBF27437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7E8652-F72C-4D1D-A5E8-7E76BBF27437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7E8652-F72C-4D1D-A5E8-7E76BBF27437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7E8652-F72C-4D1D-A5E8-7E76BBF27437}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
