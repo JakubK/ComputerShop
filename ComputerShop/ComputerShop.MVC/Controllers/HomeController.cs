@@ -8,22 +8,9 @@ namespace ComputerShop.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private IDoStuff Do;
-        // GET: Home
-
-        public HomeController()
+        public ActionResult Index()
         {
-
-        }
-
-        public HomeController(IDoStuff stuff)
-        {
-            this.Do = stuff;
-        }
-
-        public string Index()
-        {
-            return Do.Property;
+            return View();
         }
     }
 }

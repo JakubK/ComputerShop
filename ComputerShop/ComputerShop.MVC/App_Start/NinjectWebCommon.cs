@@ -44,7 +44,6 @@ namespace ComputerShop.MVC.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             //kernel.Bind<IRepo>().ToMethod(ctx => new Repo("Ninject Rocks!"));
-            kernel.Bind<IDoStuff>().To<DoStuff>();
         }
     }
 }
