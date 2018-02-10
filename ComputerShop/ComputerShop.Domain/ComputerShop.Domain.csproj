@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Concrete\ComputerShopDbContext.cs" />
+    <Compile Include="Concrete\Repository.cs" />
     <Compile Include="Entites\Cart.cs" />
     <Compile Include="Entites\CartDetail.cs" />
     <Compile Include="Entites\Category.cs" />
