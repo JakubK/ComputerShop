@@ -1,4 +1,5 @@
-﻿using ComputerShop.MVC.Controllers;
+﻿using ComputerShop.MVC.App_Start;
+using ComputerShop.MVC.Controllers;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using Ninject;
 using Ninject.Web.Common;
@@ -8,8 +9,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(NinjectWebCommon), "Stop")]
 namespace ComputerShop.MVC.App_Start
 {
+
     public static class NinjectWebCommon
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
