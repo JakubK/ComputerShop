@@ -11,14 +11,15 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
-        public uint ID { get; set; }
-
+        public int ID { get; set; }
+        [Required,MinLength(2),MaxLength(40)]
         public string Name { get; set; }
-
+        [Required, MinLength(2), MaxLength(40)]
         public string Surname { get; set; }
-
+        [EmailAddress,Required, MinLength(5), MaxLength(40)]
         public string Email { get; set; }
-
+        
+        [Required,StringLength(64)] //64 bo bedziemy raczej uzywac sha 256
         public string PasswordHashed { get; set; }
         #endregion
 

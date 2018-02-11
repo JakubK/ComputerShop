@@ -12,7 +12,7 @@ namespace ComputerShop.Domain.Entites
         #region Columns
         [Key]
         public int ID { get; set; }
-
+        [Required,MaxLength(30),MinLength(3)]
         public string Name { get; set; }
         #endregion
 

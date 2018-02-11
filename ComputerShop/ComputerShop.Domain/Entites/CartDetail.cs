@@ -12,17 +12,18 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
-        public uint ID { get; set; }
+        public int ID { get; set; }
 
-        [ForeignKey("Cart")]
-        public uint CartID { get; set; }
+        [ForeignKey("Cart"),Required]
+        public int CartID { get; set; }
         public virtual Cart Cart { get; set; }
 
-        [ForeignKey("Product")]
-        public uint ProductID { get; set; }
+        [ForeignKey("Product"),Required]
+        public int ProductID { get; set; }
         public virtual Product Product { get; set; }
 
-        public uint Quantity { get; set; }
+        [Required]
+        public int Quantity { get; set; }
         #endregion
     }
 }

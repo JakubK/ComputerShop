@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,10 +13,10 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key,ForeignKey("Product")]
-        public uint ID { get; set; }
+        public int ID { get; set; }
         public virtual Product Product { get; set; }
-
-        public uint Quantity { get; set; }
+        [Required,DefaultValue(0)]
+        public int Quantity { get; set; }
 
         public bool Available { get; set; }
         #endregion

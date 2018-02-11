@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,10 +13,10 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key,ForeignKey("OrderDetail")]
-        public uint ID { get; set; }
-
+        public int ID { get; set; }
+        [Required,MinLength(3),MaxLength(30)]
         public string Name { get; set; }
-
+        [Required,DefaultValue(0)]
         public decimal Price { get; set; }
 
         [ForeignKey("Category")]

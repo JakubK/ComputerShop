@@ -16,8 +16,10 @@ namespace ComputerShop.Domain.Entites
 
         [ForeignKey("User")]
         public uint UserID { get; set; } 
+        [MaxLength(20),MinLength(6)]
         public virtual User User { get; set; }
 
+        [Required]
         public DateTime PurchaseDate { get; set; }
         #endregion
 

@@ -12,10 +12,10 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
-        public uint ID { get; set; }
+        public int ID { get; set; }
 
         [ForeignKey("User")]
-        public uint UserID { get; set; }
+        public int UserID { get; set; }
         public virtual User User { get; set; }
         #endregion
 
