@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,9 @@ namespace ComputerShop.Domain.Entites
         public string Surname { get; set; }
         [EmailAddress,Required, MinLength(5), MaxLength(40)]
         public string Email { get; set; }
+
+        [Required,DefaultValue("user")]
+        public string Role { get; set; }
         
         [Required,StringLength(64)] //64 bo bedziemy raczej uzywac sha 256
         public string PasswordHashed { get; set; }
