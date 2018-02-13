@@ -57,6 +57,7 @@
     <Compile Include="Entites\OrderDetail.cs" />
     <Compile Include="Entites\Payment.cs" />
     <Compile Include="Entites\Product.cs" />
+    <Compile Include="Entites\ProductPhoto.cs" />
     <Compile Include="Entites\ProductRating.cs" />
     <Compile Include="Entites\ProductState.cs" />
     <Compile Include="Entites\ShippingInfo.cs" />
