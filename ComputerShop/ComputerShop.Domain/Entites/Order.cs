@@ -12,6 +12,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public uint ID { get; set; }
 
         [ForeignKey("User")]

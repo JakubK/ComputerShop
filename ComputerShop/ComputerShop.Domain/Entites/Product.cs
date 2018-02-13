@@ -13,6 +13,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key,ForeignKey("OrderDetail")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required,MinLength(3),MaxLength(30)]
         public string Name { get; set; }
@@ -27,5 +28,6 @@ namespace ComputerShop.Domain.Entites
         public virtual List<ProductRating> ProductRatings { get; set; }
         public virtual List<OrderDetail> OrderDetails { get; set; }
         public virtual List<CartDetail> CartDetails { get; set; }
+        public virtual List<ProductPhoto> ProductPhotos { get; set; }
     }
 }

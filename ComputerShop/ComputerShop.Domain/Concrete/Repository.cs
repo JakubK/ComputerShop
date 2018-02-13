@@ -47,6 +47,11 @@ namespace ComputerShop.Domain.Concrete
             get { return dbContext.Products; }
         }
 
+        public IEnumerable<ProductPhoto> ProductPhotos
+        {
+            get { return dbContext.ProductPhotos; }
+        }
+
         public IEnumerable<ProductRating> ProductRatings
         {
             get { return dbContext.ProductRatings; }

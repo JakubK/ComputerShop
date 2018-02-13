@@ -12,6 +12,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key,ForeignKey("User")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public virtual User User { get; set; }
         [Required,MinLength(3),MaxLength(100)]

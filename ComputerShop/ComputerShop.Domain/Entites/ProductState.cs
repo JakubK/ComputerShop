@@ -13,6 +13,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key,ForeignKey("Product")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public virtual Product Product { get; set; }
         [Required,DefaultValue(0)]

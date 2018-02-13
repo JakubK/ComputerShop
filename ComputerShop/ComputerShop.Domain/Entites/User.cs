@@ -12,6 +12,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required,MinLength(2),MaxLength(40)]
         public string Name { get; set; }

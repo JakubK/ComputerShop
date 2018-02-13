@@ -13,6 +13,7 @@ namespace ComputerShop.Domain.Entites
     {
         #region Columns
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         
         [ForeignKey("Product"),Required]
