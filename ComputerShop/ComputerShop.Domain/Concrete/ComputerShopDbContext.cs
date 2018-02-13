@@ -17,6 +17,7 @@ namespace ComputerShop.Domain.Concrete
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductPhoto> ProductPhotos { get; set; }
         public DbSet<ProductRating> ProductRatings { get; set; }
         public DbSet<ProductState> ProductStates { get; set; }
         public DbSet<ShippingInfo> ShippingInfos { get; set; }

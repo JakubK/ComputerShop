@@ -16,6 +16,7 @@ namespace ComputerShop.Domain.Abstract
         IEnumerable<OrderDetail> OrderDetails { get; }
         IEnumerable<Payment> Payments { get; }
         IEnumerable<Product> Products { get; }
+        IEnumerable<ProductPhoto> ProductPhotos { get; }
         IEnumerable<ProductRating> ProductRatings { get; }
         IEnumerable<ProductState> ProductStates { get; }
         IEnumerable<ShippingInfo> ShippingInfos { get; }
