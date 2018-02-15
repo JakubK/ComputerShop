@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ComputerShop.Domain.Entites
 {
+    [Table("CartDetails")]
     public class CartDetail
     {
         #region Columns

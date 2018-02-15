@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ComputerShop.Domain.Entites
 {
+    [Table("Payments")]
     public class Payment
     {
         #region Columns
