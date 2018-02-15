@@ -12,7 +12,7 @@ namespace ComputerShop.Domain.Entites
     public class Product
     {
         #region Columns
-        [Key,ForeignKey("OrderDetail")]
+        [Key,ForeignKey("OrderDetails")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required,MinLength(3),MaxLength(30)]

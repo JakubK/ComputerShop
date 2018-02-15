@@ -7,6 +7,8 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using System.Data.Entity;
+using ComputerShop.Domain.Concrete;
 
 namespace ComputerShop.MVC
 {
@@ -17,7 +19,7 @@ namespace ComputerShop.MVC
             // Kod uruchamiany podczas uruchamiania aplikacji
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }

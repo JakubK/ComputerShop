@@ -10,6 +10,11 @@ namespace ComputerShop.Domain.Concrete
 {
     public class ComputerShopDbContext : DbContext
     {
+        public ComputerShopDbContext() : base()
+        {
+
+        }
+
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartDetail> CartDetails { get; set; }
         public DbSet<Category> Categories { get; set; }
