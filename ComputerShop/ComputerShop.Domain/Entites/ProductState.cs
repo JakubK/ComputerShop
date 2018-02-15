@@ -16,6 +16,7 @@ namespace ComputerShop.Domain.Entites
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public virtual Product Product { get; set; }
+
         [Required,DefaultValue(0)]
         public int Quantity { get; set; }
 

@@ -18,10 +18,9 @@ namespace ComputerShop.Domain.Entites
         [Required]
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        public virtual Product Product { get; set; }
 
         public string ImageURI { get; set; }
         #endregion
-
-        public virtual Product Product { get; set; }
     }
 }
