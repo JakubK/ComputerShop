@@ -12,7 +12,7 @@ namespace ComputerShop.Domain.Concrete
     {
         public ComputerShopDbContext() : base()
         {
-
+         
         }
 
         public DbSet<Cart> Carts { get; set; }
